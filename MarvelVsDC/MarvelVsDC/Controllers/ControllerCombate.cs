@@ -2,8 +2,6 @@
 using MarvelVsDC.DTO;
 using Microsoft.AspNetCore.Mvc;
 using MongoDB.Driver;
-using System;
-using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
@@ -16,7 +14,7 @@ namespace MarvelVsDC.Controllers
         public MongoClient mongoClient = new MongoClient("mongodb://localhost:27017");
 
         [HttpPost("combater")]
-        public async Task<object> _ControllerCombate(RequisicaoCombate objeto)
+        public async Task<dynamic> _ControllerCombate(RequisicaoCombate objeto)
         {
             var database = mongoClient.GetDatabase("UniversoHeroisAberto");
 
@@ -33,14 +31,14 @@ namespace MarvelVsDC.Controllers
                 foreach (var dano in item1.Power)
                 forcaTotal1 += dano.Value;
 
-                for (int i = 0; i <= item2.Power.Count; i++)
+                for (int i = 0; i < item2.Power.Count; i++)
                 {
                     totalPowder2 = totalPowder2 + item2.Power[i].Value;
                 }
 
                 item1.Life = item1.Life - totalPowder2;
                 item2.Life -= forcaTotal1;
-            } while (item1.Life > 0 || item2.Life > 0);
+            } while (item1.Life > 0 && item2.Life > 0);
 
             return new {
                 heroi = new

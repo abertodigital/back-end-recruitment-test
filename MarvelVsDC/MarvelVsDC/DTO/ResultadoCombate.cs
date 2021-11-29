@@ -1,4 +1,4 @@
-﻿]using MarvelVsDC.Dominio;
+﻿using MarvelVsDC.Dominio;
 
 namespace MarvelVsDC.DTO
 {
