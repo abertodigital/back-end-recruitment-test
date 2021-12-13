@@ -1,6 +1,6 @@
 ![N|Solid](https://aberto.com.br/wp-content/uploads/2018/01/aberto_logo_branco.png)
 
-# Teste de recrutamento back(full-stack)
+# Teste de recrutamento back-end
 
 <details>
   <summary>Herois Vs Vilões</summary>
