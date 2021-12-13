@@ -30,7 +30,7 @@ No endpoint de combate, deverá ser informado os identificadores de dois persona
 
 A batalha consiste em rodadas de ataques, onde em cada rodada um personagem causa um dano ao seu adversário, a batalha só termina quando um dos personagens ou ambos tenham o contador de vida zerado. 
 
-O retorno do endpoint de combate deverá conter a quantidade de rodadas de ataques que aconteceram, a quantidade de vida restou em cada personagem e se o personagem está vivo ou morto. 
+O retorno do endpoint de combate deverá conter a quantidade de rodadas de ataques que aconteceram, a quantidade de vida que restou em cada personagem e se o personagem está vivo ou morto. 
 
 
 Regras de negócio: 
