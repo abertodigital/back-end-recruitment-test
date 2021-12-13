@@ -3,7 +3,7 @@
 # Teste de recrutamento back-end
 
 <details>
-  <summary>Herois Vs Vilões</summary>
+  <summary>Heróis Vs Vilões</summary>
   
  ### Objetivo do teste: 
   - Analisar e compreender o funcionamento da aplicação existente; 
